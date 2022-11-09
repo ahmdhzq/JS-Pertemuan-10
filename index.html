@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 10 - DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h2>Konversi Mata Uang</h2>
+            <form>
+                <label>Amount
+                <input type="number" placeholder="Masukan nominal uang" id="amount">
+            </label>
+                <div class="pilih">
+                    <label>From
+                        <select name="money" id="awal">
+                            <option value="usd1">USD</option>
+                            <option value="idr1">IDR</option>
+                            <option value="jpy1">JPY</option>
+                        </select>
+                    </label>
+                    <label>To
+                        <select name="money" id="akhir">
+                            <option value="usd2">USD</option>
+                            <option value="idr2">IDR</option>
+                            <option value="jpy2">JPY</option>
+                        </select>
+                    </label>
+                </div>
+                <button id="submit" type="button" onclick="convert()">Convert</button>
+                <input type="text" id="hasil">
+            </form>
+        </div>
+    
+        <div class="content">
+            <h2>Konversi Suhu</h2>
+            <form>
+                <label>Temperature
+                <input type="number" placeholder="Masukan angka suhu" id="suhu">
+            </label>
+                <div class="pilih">
+                    <label>From
+                        <select name="temp" id="awalSuhu">
+                            <option value="cius1">Celcius</option>
+                            <option value="fah1">Fahrenheit</option>
+                            <option value="vin1">Kelvin</option>
+                            <option value="rea1">Reamur</option>
+                        </select>
+                    </label>
+                    <label>To
+                        <select name="temp" id="akhirSuhu">
+                            <option value="cius2">Celcius</option>
+                            <option value="fah2">Fahrenheit</option>
+                            <option value="vin2">Kelvin</option>
+                            <option value="rea2">Reamur</option>
+                        </select>
+                    </label>
+                </div>
+                <button id="submit" type="button" onclick="temper()">Convert</button>
+                <input type="text" id="hasilSuhu">
+            </form>
+        </div>
+    </div>
+    
+    <footer>
+        <p class="footer">Copyright &copy; Ahmad_Haziq</p>
+    </footer>
+</body>
+
+<script src="./script.js"></script>
+
+</html>
